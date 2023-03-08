@@ -9,7 +9,7 @@ export default function Home({ allPostsData }) {
   // console.log(person)
 
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
