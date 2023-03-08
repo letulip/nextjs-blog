@@ -47,6 +47,10 @@
   margin: 0 0 1.25rem;
 }
 
+.listItemBig {
+  margin: 0 0 2.5rem;
+}
+
 .lightText {
   color: #666;
 }

@@ -28,14 +28,20 @@ img {
 
 h1,
 h2,
-p,
-ul {
+p {
   margin: 0;
 }
 
+h4 {
+  color: gray;
+  font-weight: 400;
+  margin-block-start: 10px;
+  font-size: 20px;
+}
+
 ul {
-  padding: 0;
-  list-style: none;
+  padding-inline-start: 20px;
+  /* list-style: none; */
 }
 
 button {
