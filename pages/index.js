@@ -12,6 +12,20 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name="description"
+          content="Check out letulip's personal blog developed with Next.js and React."
+          key="desc"
+        />
+        <meta property="og:title" content={siteTitle} />
+        <meta
+          property="og:description"
+          content="Check out letulip's personal blog developed with Next.js and React."
+        />
+        <meta
+          property="og:image"
+          content="/img/avatar2.jpg"
+        />
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hullo! I'm Igor. I'm a front end developer. You can contact me on <a href='https://t.me/letulip'>Telegram</a></p>
