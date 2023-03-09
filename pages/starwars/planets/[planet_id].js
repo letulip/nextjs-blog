@@ -4,7 +4,6 @@ import utilStyles from '../../../styles/utils.module.css'
 
 // SSR Example
 export default function PlanetInfo({ info }) {
-  console.log(`info: ${info}`)
   return (
     <Layout>
       <Head>
@@ -35,8 +34,6 @@ export async function getServerSideProps({ query }) {
   // query is reserved props
   const res = await fetch(`https://swapi.dev/api/planets/${query.planet_id}`)
   const data = await res.json()
-
-  console.log(`data: ${data}`)
 
   return {
     props: {
