@@ -4,10 +4,11 @@ import utilStyles from '../../../styles/utils.module.css'
 
 // SSR Example
 export default function PlanetInfo({ info }) {
+  console.log(`info: ${info}`)
   return (
     <Layout>
       <Head>
-        <title>{info.name} Info</title>
+        <title>{info.name} Planet Info</title>
       </Head>
       <h1>{info.name}</h1>
       {/* "rotation_period": "23", 
@@ -30,9 +31,12 @@ export default function PlanetInfo({ info }) {
   )
 }
 
-export async function getServerSideProps({ id }) {
-  const res = await fetch(`https://swapi.dev/api/planets/${id}`)
+export async function getServerSideProps({ query }) {
+  // query is reserved props
+  const res = await fetch(`https://swapi.dev/api/planets/${query.planet_id}`)
   const data = await res.json()
+
+  console.log(`data: ${data}`)
 
   return {
     props: {

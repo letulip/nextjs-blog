@@ -7,7 +7,7 @@ export default function CharInfo({ info }) {
   return (
     <Layout>
       <Head>
-        <title>{info.name} Info</title>
+        <title>{info.name} Char Info</title>
       </Head>
       <h1>{info.name}</h1>
       {/* "height": "172", 
