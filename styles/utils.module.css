@@ -25,6 +25,14 @@
   line-height: 1.5;
 }
 
+.heading3after {
+  margin-block-end: 10px;
+}
+
+.heading4after {
+  margin-block-end: 5px;
+}
+
 .borderCircle {
   border-radius: 9999px;
 }
@@ -41,6 +49,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.listBefore {
+  margin-block-start: 5px;
 }
 
 .listItem {
