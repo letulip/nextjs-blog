@@ -68,8 +68,3 @@ export async function getStaticProps() {
     }
   }
 }
-
-async function getSWPerson() {
-  const res = await fetch('https://swapi.dev/api/people/1')
-  return res.json()
-}
